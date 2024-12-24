@@ -1,0 +1,5 @@
+generators:
+  <player uuid>:
+    <slot number>:
+      type: <generator type>
+      location: <world name>,<x>,<y>,<z>

@@ -1,0 +1,69 @@
+name: Zana
+version: '${project.version}'
+main: com.coldspare.zana.Zana
+api-version: 1.17
+authors: [ ColdSpare ]
+description: ZanaGens Core Plugin
+depend: [PlaceholderAPI]
+permissions:
+  zana.generator:
+    description: Allows access to generator commands
+    default: op
+  zana.token:
+    description: Allows access to token commands
+    default: op
+  zana.level:
+      description: Allows access to level commands
+      default: op
+  zana.booster:
+    description: Allows access to boost commands
+    default: op
+commands:
+  generator:
+    description: Generator command.
+
+  sell:
+    description: Sell all sellable items in your inventory.
+    usage: /sell
+  sellwandgive:
+    description: Give a player a specified amount of sell wands.
+    usage: /sellwandgive <player> <multiplier> <amount>
+
+  addtokens:
+    description: Adds tokens to a player
+    usage: /addtokens <player> <amount>
+  removetokens:
+    description: Removes tokens from a player.
+    usage: /removetokens <player> <amount>
+
+  leveltop:
+    description: Shows top 10 levels of all players.
+    usage: /leveltop
+  resetlevels:
+    description: Wipes all level data for everyone.
+    usage: /resetlevels <confirm>
+  xpremove:
+    description: Removes XP from a player.
+    usage: /xpremove <player> <amount>
+  xpadd:
+    description: Adds XP to a player.
+    usage: /xpadd <player> <amount>
+  leveladd:
+    description: Adds levels to a player.
+    usage: /leveladd <player> <amount>
+  levelremove:
+    description: Removes levels from a player.
+    usage: /levelremove <player> <amount>
+  levelset:
+    description: Sets a player's level.
+    usage: /levelset <player> <amount>
+
+  boosteradd:
+    description: Adds a booster to a player.
+    usage: /boosteradd <player> <type> <multiplier>
+  boosterclear:
+    description: Clears all boosters.
+    usage: /boosterclear
+
+  migrate:
+    description: Migrates generator data from YML to MySQL.
